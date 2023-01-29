@@ -1,59 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto de Contas Bancárias </title>
-  <script src="./index.js" async></script>
-  <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-  <header>
-    <div class="bloco">
-      <img id="logo" src="./Fotos/icone moeda.png" alt="Logo do Banco">
-      <h1 id="titulo">Banco Devin House</h1>
-    </div>
-  </header>
-  
-  <main>
-    <form action="">
-      <div>
-        <label for="name ">Nome:</label>
-        <input required id="nome" type="text" placeholder="Digite um Nome">    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto de Contas Bancárias</title>
+    <script src="./index.js" async></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bloco">
+        <img id="logo" src="./Fotos/icone moeda.png" alt="Logo do Banco" />
+        <h1 id="titulo">Banco Devin House</h1>
       </div>
+    </header>
 
-      <div>
-        <label for="cpf">CPF: </label>
-        <input required id="cpf" type="text" placeholder="Digite o CPF">
-      </div>
+    <main>
+      <form id="form-cadastro" action="">
+        <div>
+          <label for="name ">Nome:</label>
+          <input required id="nome" type="text" placeholder="Digite um Nome" />
+        </div>
 
-      <div>
-        <label for="celular">Celular: </label>
-        <input required id="celular" type="text" placeholder="Digite o seu número">
-      </div>
-      
-      <div>
-        <label for="senha">Senha: </label>
-        <input required id="senha" type="password" placeholder="Digite a sua senha">
-      </div>
+        <div>
+          <label for="cpf">CPF: </label>
+          <input required id="cpf" type="text" placeholder="Digite o CPF" />
+        </div>
 
-      
-      <div>
-        <label for="Confrimacao-senha">Senha: </label>
-        <input required id="Confrimacao-senha" type="password" placeholder="Confirme sua Senha">
-      </div>
+        <div>
+          <label for="celular">Celular: </label>
+          <input required id="celular" type="text" placeholder="Digite o seu número" />
+        </div>
 
-      <div>
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
-      </div>
+        <div>
+          <label for="senha">Senha: </label>
+          <input required id="senha" type="password" placeholder="Digite a sua senha" />
+        </div>
+
+        <div>
+          <label for="Confrimacao-senha">Senha: </label>
+          <input required id="confrimacaoSenha" type="password" placeholder="Confirme sua Senha" />
+        </div>
+
+        <div>
+          <button type="reset">Limpar</button>
+          <button type="submit">Enviar</button>
+        </div>
       </form>
-  </main>
-  
-  <footer>
-    <h3>Esse site foi desenvolvido para melhor atendimento dos clientes em nossa agencia</h3>
-    <p>DESENVOLVEDOR PETERSON WIGGERS</p>
-  </footer>
-</body>
+      <br /><br />
+
+      <form id="form-operacao">
+        <div>
+          <label for="conta">Conta:</label>
+          <input required id="conta" type="number" placeholder="Digite a conta" />
+        </div>
+
+        <div>
+          <label for="operacao">Operação:</label>
+          <select required id="operacao">
+            <option value="saque">Saque</option>
+            <option value="deposito">Depósito</option>
+            <option value="saldo">Consulta saldo</option>
+          </select>
+        </div>
+        <div>
+          <label for="valor">Valor:</label>
+          <input required id="valor" type="number" placeholder="Digite o valor" />
+        </div>
+
+        <div>
+          <label for="senha">Senha:</label>
+          <input required id="senhaOperacao" type="password" placeholder="Digite a senha" />
+        </div>
+        <div>
+          <button type="reset">Limpar</button>
+          <button type="submit">Confirmar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <h3>Esse site foi desenvolvido para melhor atendimento dos clientes em nossa agencia</h3>
+      <p>DESENVOLVEDOR PETERSON WIGGERS</p>
+    </footer>
+  </body>
 </html>
